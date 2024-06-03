@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicatessen Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Delicatessen Store</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                   
+                    <li><a href="#contact">Contact</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-text">
+                <h2>Cake With Strawbary</h2>
+                <p>for your happy Family</p>
+                <p>Can be made into various forms like layer cakes, shortcakes, or cheesecakes.</p>
+            </div>
+            <div class="hero-image">
+                <img src="Strawberry Cake.jpeg" alt="Cake with Strawbary">
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="products">
+        <div class="container">
+            <h2>Sweet and slightly tart taste that balances the cake's sweetness.</h2>
+            <p></p>
+            <div class="product-carousel">
+                <div class="product">
+                    <img src="Strawberry Cake Piece.jpeg" alt="Strawberry Cake Piece">
+                    <p>$115</p>
+                    <p>Strawberry Cake Piece</p>
+                </div>
+                <div class="product">
+                    <img src="Chocolate Cake Piece.jpeg" alt="Chocolate Cake Piece">
+                    <p>$115</p>
+                    <p>Strawberry Cake Piece</p>
+                </div>
+                <div class="product">
+                    <img src="Fruit Cake Piece.jpeg" alt="Fruit Cake Piece">
+                    <p>$115</p>
+                    <p>Strawberry Cake Piece</p>
+                </div>
+                <div class="product">
+                    <img src="Layer Cake Piece.jpeg" alt="Layer Cake Piece">
+                    <p>$115</p>
+                    <p>Strawberry Cake Piece</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <footer>
+    <div id="contact" class="container">
+        <div class="footer-section navigation">
+            <h3>Navigation</h3>
+            <p>E-Mail us: <a href="mailto:info@delicatessenstore.com">info@delicatessenstore.com</a></p>
+            <p>Follow us on Twitter: <a href="https://twitter.com/delicatessen">twitter.com/delicatessen</a></p>
+            <p>Follow us on Facebook: <a href="https://facebook.com/delicatessen">facebook.com/delicatessen</a></p>
+        </div>
+        <div class="footer-section help">
+            <h3>Get Help</h3>
+            <p>E-Mail us: <a href="mailto:help@delicatessenstore.com">help@delicatessenstore.com</a></p>
+            <p>Call us: 222-222-2222</p>
+        </div>
+        <div class="footer-section contact">
+            <h3>Contact Address</h3>
+            <p>123-456 Lorem Ipsum Vanc</p>
+            <p>Canada med6 5t2</p>
+        </div>
+        <div class="footer-section updates">
+            <h3>Get Email Updates</h3>
+            <input type="email" placeholder="Your email address">
+            <button>Get Knowledge</button>
+        </div>
+    </div>
+    <p>&copy; 2023 delicatessenstore. All rights reserved.</p>
+</footer>
+
+    <script src="scripts.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Placeholder for any future JavaScript functionality
+            console.log("JavaScript is linked correctly.");
+
+            // Smooth scroll functionality
+            document.querySelectorAll('nav ul li a').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
